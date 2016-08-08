@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+    
+    <head>
+        <title>Yo! Radio</title>
+        <link rel="stylesheet" type="text/css" 
+                       href='@routes.Assets.versioned("stylesheets/main.css")'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        @header()
+        
+         <div class="modal fade" id="loginmodal" role="dialog">
+            <div class="modal-dialog">
+    
+                <!-- Modal content-->
+                <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                    <div class="login-title">Sign In with Yo!</div>
+                    <div class="form_wrapper">
+                        <input type="text" placeholder="User Name" />
+                        <input type="password" placeholder="Password" />
+                        <button class="signin-button">Sign In</button>
+                        <input style="color: #36b4a7;" type="checkbox" checked="checked" name="Remember" value="true" id="Remember">
+                        <label for="Remember">Remember me</label>
+                    </div>
+                </div>
+      
+            </div>
+        </div>
+  
+        
+        @script()
+    </body>
+</html>

@@ -1,0 +1,15 @@
+@(list: List[String])
+<!Doctype html>
+<html>
+    <head><title>List</title></head>
+    <body>
+        <ul>
+            @for(index <- 0 until list.size){
+                @if(index % 3 == 0){
+            
+                }
+                <li>@list(index)</li>
+            }
+        </ul>
+    </body>
+</html>
